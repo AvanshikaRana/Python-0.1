@@ -1,8 +1,8 @@
 import random
 
 while True:
-    user_action = input("Enter a choice (rock, paper, scissors): ")
-    possible_actions = ["rock", "paper", "scissors"]
+    user_action = input("Enter a choice (rock, paper, scissors,water): ")
+    possible_actions = ["rock", "paper", "scissors","water"]
     computer_action = random.choice(possible_actions)
     print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
 
@@ -25,5 +25,5 @@ while True:
             print("Rock smashes scissors! You lose.")
 
     play_again = input("Play again? (y/n): ")
-    if play_again.lower() != "y":
+    if play_again.upper() != "y":
         break
